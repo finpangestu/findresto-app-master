@@ -21,10 +21,10 @@ img {
 	top: -80px;
 	left: 0;
 	background-color: darkred;
-	border-radius: 10px;
+	border-radius: 5px;
 	color: white;
-	padding: 10px;
-	font-size: 20px;
+	padding: 5px;
+	font-size: 16px;
 	z-index: 150;
 	text-decoration: none;
 	border-style: solid;
@@ -32,7 +32,8 @@ img {
 }
 
 .skip-link:focus {
-	top: 0;
+	top: 5px;
+	left: 47%;
 }
 
 .navdeks {
