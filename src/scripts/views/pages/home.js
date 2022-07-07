@@ -6,7 +6,7 @@ const Home = {
         return `
         <section class="content" id="content">
             <div class="latest">
-                <h2>Berikut adalah Daftar Restoran yang ada di <span><img src="./images/heros/full-logo.png" alt="findresto-logo" width="150px"></span></h2>
+                <h2>Berikut adalah Daftar Restoran yang ada di <span><img src="./images/full-logo.png" alt="findresto-logo" width="150px"></span></h2>
                 <div class="listrest" id="list-rest"></div>
             </div>
         </section>
