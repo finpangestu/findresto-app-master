@@ -1,10 +1,10 @@
 class HeroElement extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <div class="heroelement" style="background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('images/heros/hero-image_2.jpg');">
             <div class="heroin">
                 <img src="./images/full-logo.png" alt="findresto-logo">
@@ -13,7 +13,7 @@ class HeroElement extends HTMLElement {
             </div>
         </div>
       `;
-    }
+  }
 }
 
 customElements.define('hero-element', HeroElement);

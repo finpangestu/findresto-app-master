@@ -2,7 +2,8 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jasmine": true
     },
     "extends": [
         "airbnb-base"
@@ -16,11 +17,9 @@
         "linebreak-style": "off",
         "no-underscore-dangle": "off",
         "operator-linebreak": "off",
-        "func-names":"off",
         "no-restricted-globals" :"off",
         "implicit-arrow-linebreak":"off",
-        "indent":"off",
-        "import/no-extraneous-dependencies":"off",
-        "no-extra-semi":"off" 
+        "consistent-return": "off",
+        "no-prototype-builtins": "off"
     }
 }

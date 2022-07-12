@@ -1,12 +1,12 @@
 import UrlParser from '../../routes/url-parser';
 import RestaurantSource from '../../data/resto-source';
 import { restoDetail } from '../templates/resto-detail';
-// import { createLikeButtonTemplate } from '../templates/like-button';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
+import FavRestoIdb from '../../data/favorite-resto-idb';
 
 const Detail = {
-    async render() {
-        return `
+  async render() {
+    return `
         <div class="content">
             <div id="main-container">
                 <div class="like" id="likeButtonContainer"></div>
@@ -32,24 +32,25 @@ const Detail = {
             </div>
         </div>
         `;
-    },
-    async afterRender() {
-        const url = UrlParser.parseActiveUrlWithoutCombiner();
-        const detailContent = document.querySelector('#detail-resto');
+  },
+  async afterRender() {
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const detailContent = document.querySelector('#detail-resto');
 
-        try {
-            const data = await RestaurantSource.getRestaurantDetail(url.id);
-            detailContent.innerHTML += restoDetail(data.restaurant);
+    try {
+      const data = await RestaurantSource.getRestaurantDetail(url.id);
+      detailContent.innerHTML += restoDetail(data.restaurant);
 
-            LikeButtonInitiator.init({
-                likeButtonContainer: document.querySelector('#likeButtonContainer'),
-                data,
-            });
-        } catch (err) {
-            console.error(err);
-            detailContent.innerHTML = `Error: ${err.message}`;
-        }
-    },
+      LikeButtonPresenter.init({
+        likeButtonContainer: document.querySelector('#likeButtonContainer'),
+        favoriteResto: FavRestoIdb,
+        data,
+      });
+    } catch (err) {
+      console.error(err);
+      detailContent.innerHTML = `Error: ${err.message}`;
+    }
+  },
 };
 
 export default Detail;

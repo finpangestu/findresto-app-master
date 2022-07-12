@@ -11,17 +11,17 @@ import CONFIG from './globals/config';
 
 // init App
 const app = new App({
-    button: document.querySelector('#iconm'),
-    drawer: document.querySelector('#drawer'),
-    content: document.querySelector('main'),
+  button: document.querySelector('#iconm'),
+  drawer: document.querySelector('#drawer'),
+  content: document.querySelector('main'),
 });
 
 window.addEventListener('hashchange', () => {
-    app.renderPage();
+  app.renderPage();
 });
 
 window.addEventListener('load', () => {
-    app.renderPage();
-    swRegister();
-    WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
+  app.renderPage();
+  swRegister();
+  WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
 });

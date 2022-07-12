@@ -1,13 +1,13 @@
-const createLikeButtonTemplate = () => `
-    <button aria-label="like this movie" id="likeButton" class="like">
+const createLikeRestoButtonTemplate = () => `
+    <button aria-label="like this resto" id="likeButton" class="like">
         <i class="far fa-heart" aria-hidden="true"></i>
     </button>
 `;
 
-const createLikedButtonTemplate = () => `
-    <button aria-label="unlike this movie" id="likeButton" class="like">
+const createLikedRestoButtonTemplate = () => `
+    <button aria-label="unlike this resto" id="likeButton" class="like">
         <i class="fa fa-heart" aria-hidden="true"></i>
     </button>
 `;
 
-export { createLikeButtonTemplate, createLikedButtonTemplate };
+export { createLikeRestoButtonTemplate, createLikedRestoButtonTemplate };

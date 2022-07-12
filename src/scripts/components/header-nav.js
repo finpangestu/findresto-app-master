@@ -1,10 +1,10 @@
 class HeaderNav extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <nav class="navdeks">
             <div class="header-logo">
                 <a href=""><img src="./images/full-logo-white.png" alt="findresto-logo"></a>
@@ -31,7 +31,7 @@ class HeaderNav extends HTMLElement {
             </ul>
         </nav>
         `;
-    }
+  }
 }
 
 customElements.define('header-nav', HeaderNav);
