@@ -6,7 +6,7 @@ import {
 const LikeButtonPresenter = {
   async init({ likeButtonContainer, favoriteResto, data }) {
     this._likeButttonContainer = likeButtonContainer;
-    this._restaurant = data;
+    this._restaurant = data.restaurant;
     this._favoriteResto = favoriteResto;
 
     await this._renderButton();
