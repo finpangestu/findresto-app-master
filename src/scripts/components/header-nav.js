@@ -7,10 +7,13 @@ class HeaderNav extends HTMLElement {
     this.innerHTML = `
         <nav class="navdeks">
             <div class="header-logo">
-                <a href=""><img src="./images/full-logo-white.png" alt="findresto-logo"></a>
+                <picture>
+                    <source media="(max-width: 600px" srcset="./images/full-logo-small.jpg">
+                    <img src="./images/full-logo-small.jpg" alt="findresto-logo">
+                </picture>
             </div>
             <div class="menu">
-                <a href=""><i class="fa-solid fa-house"></i>Home</a>
+                <a href="/"><i class="fa-solid fa-house"></i>Home</a>
                 <a href="#/favorite"><i class="fa-solid fa-heart"></i>Favorit</a>
                 <a href="https://www.linkedin.com/in/finnn-941642241/" target="_blank"><i class="fa-solid fa-user"></i>Owner</a>
             </div>
@@ -19,9 +22,9 @@ class HeaderNav extends HTMLElement {
         <!-- Mobile -->
         <nav class="navmob">
             <div class="iconmobs" id="iconm">
-                <button><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+                <button aria-label="button menu dropdown on mobile" type="button"><i class="fa-solid fa-bars"></i></button>
             </div>
-            <a href="">Findresto</a> 
+            <p>Findresto</p>
         </nav>
         <nav class="menumob" id="drawer">
             <ul class="navmoblist">

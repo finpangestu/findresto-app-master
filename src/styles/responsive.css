@@ -29,29 +29,17 @@
 		width: 100%;
 		text-align: left;
 	}
-	.heroelement {
-		margin-top: -100px;
-	}
 
-	.heroelement > .heroin > img {
+	.heroelement > .heroin img {
 		width: 200px;
 		margin: 0 auto;
-	}
-
-	.content > .latest h2 {
-		grid-template-columns: auto;
-	}
-
-	.content > .latest h2 span img {
-		width: 100px;
-		text-align: center;
-		margin: 10px auto;
 	}
 
 	.skip-link {
 		left: 43%;
 	}
 }
+
 /* Tablet */
 @media screen and (min-width: 426px) and (max-width: 768px) {
 	.navdeks {
@@ -103,23 +91,10 @@
 		width: 100%;
 		text-align: left;
 	}
-	.heroelement {
-		margin-top: -100px;
-	}
 
-	.heroelement > .heroin > img {
+	.heroelement > .heroin img {
 		width: 200px;
 		margin: 0 auto;
-	}
-
-	.content > .latest h2 {
-		grid-template-columns: auto;
-	}
-
-	.content > .latest h2 span img {
-		width: 100px;
-		text-align: center;
-		margin: 10px auto;
 	}
 
 	.skip-link {
@@ -168,23 +143,10 @@
 		width: 100%;
 		text-align: left;
 	}
-	.heroelement {
-		margin-top: -70px;
-	}
 
-	.heroelement > .heroin > img {
+	.heroelement > .heroin img {
 		width: 200px;
 		margin: 0 auto;
-	}
-
-	.content > .latest h2 {
-		grid-template-columns: auto;
-	}
-
-	.content > .latest h2 span img {
-		width: 100px;
-		text-align: center;
-		margin: 10px auto;
 	}
 
 	.skip-link {
@@ -233,23 +195,10 @@
 		width: 100%;
 		text-align: left;
 	}
-	.heroelement {
-		margin-top: -70px;
-	}
 
-	.heroelement > .heroin > img {
+	.heroelement > .heroin img {
 		width: 200px;
 		margin: 0 auto;
-	}
-
-	.content > .latest h2 {
-		grid-template-columns: auto;
-	}
-
-	.content > .latest h2 span img {
-		width: 100px;
-		text-align: center;
-		margin: 10px auto;
 	}
 
 	.skip-link {
@@ -271,6 +220,7 @@
 	.navmob {
 		display: flex;
 		align-items: center;
+		text-align: left;
 	}
 
 	.navmob a img {
@@ -287,7 +237,6 @@
 		transform: translate(-100%, 0);
 		transition: transform 0.3s ease;
 		visibility: hidden;
-		top: 80px;
 	}
 	.open {
 		-webkit-transform: translate(0, 0);
@@ -300,23 +249,10 @@
 		width: 100%;
 		text-align: left;
 	}
-	.heroelement {
-		margin-top: -70px;
-	}
 
-	.heroelement > .heroin > img {
+	.heroelement > .heroin img {
 		width: 200px;
 		margin: 0 auto;
-	}
-
-	.content > .latest h2 {
-		grid-template-columns: auto;
-	}
-
-	.content > .latest h2 span img {
-		width: 100px;
-		text-align: center;
-		margin: 10px auto;
 	}
 
 	.skip-link {
