@@ -20,6 +20,7 @@
         "no-restricted-globals" :"off",
         "implicit-arrow-linebreak":"off",
         "consistent-return": "off",
-        "no-prototype-builtins": "off"
+        "no-prototype-builtins": "off",
+        "no-undef": "off"
     }
 }
