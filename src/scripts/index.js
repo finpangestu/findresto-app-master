@@ -8,6 +8,8 @@ import App from './views/App';
 import swRegister from './utils/sw-register';
 import WebSocketInitiator from './utils/websocket-initiator';
 import CONFIG from './globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 // init App
 const app = new App({

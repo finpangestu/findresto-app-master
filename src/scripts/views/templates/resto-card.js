@@ -8,7 +8,12 @@ const restoCard = (resto) => `
     }
 </style>
 <div class="list_item">
-    <img class="list_item_thumb" src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="${resto.name}" title="${resto.name}">
+    <img class="list_item_thumb lazyload" 
+    src="./images/placeholder-large.jpg" 
+    data-src="${resto.pictureId
+    ? CONFIG.BASE_IMAGE_URL + resto.pictureId
+    : 'https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg'
+}" alt="image ${resto.name}" title="${resto.name}" crossorigin="anonymous">
     <div class="city">${resto.city}</div>
         <div class="list_item_content">
             <p class="list_item_rating">
