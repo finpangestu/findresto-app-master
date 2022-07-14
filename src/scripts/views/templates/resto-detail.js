@@ -10,25 +10,35 @@ const restoDetail = (resto) => `
         <ul class="detail-info">
             <li>
                 <i title="restaurant" class="fas fa-store-alt icon-primary"></i>
-                <p class="detail-name-address-rating">${resto.name}</p>
+                <p class="detail-name-address-rating">
+                    ${resto.name}
+                </p>
             </li>
 
             <li>
                 <i title="address" class="fas fa-map-marker-alt icon-primary"></i>
-                <p class="detail-name-address-rating">${resto.address}, ${resto.city}</p>
+                <p class="detail-name-address-rating">
+                    ${resto.address}, ${resto.city}
+                </p>
             </li>
 
             <li>
                 <i title="ratings" class="fas fa-star icon-primary"></i>
-                <p class="detail-name-address-rating">${resto.rating}</p>
+                <p class="detail-name-address-rating">
+                    ${resto.rating}
+                </p>
             </li>
 
             <li>
-                <p class="detail-desc">${resto.description}</p>
+                <p class="detail-desc">
+                    ${resto.description}
+                </p>
             </li>
 
             <li>${resto.categories.map((category) => `
-                <span class="category">${category.name}</span>
+                <span class="category">
+                    ${category.name}
+                </span>
                 `).join('')}
             </li>
         </ul>
