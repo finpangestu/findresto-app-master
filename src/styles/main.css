@@ -401,10 +401,8 @@ footer {
 }
   
 .detail-info li {
-	position: relative;
 	display: block;
 	padding: 0.6em;
-	color: var(--font-color);
 }
   
 /* DETAIL REVIEW */
