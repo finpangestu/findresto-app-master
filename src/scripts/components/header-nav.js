@@ -15,7 +15,7 @@ class HeaderNav extends HTMLElement {
             <div class="menu">
                 <a href="/"><i class="fa-solid fa-house"></i>Home</a>
                 <a href="#/favorite"><i class="fa-solid fa-heart"></i>Favorit</a>
-                <a href="https://www.linkedin.com/in/finnn-941642241/" target="_blank"><i class="fa-solid fa-user"></i>Owner</a>
+                <a href="https://www.linkedin.com/in/finnn-941642241/" target="_blank" rel="noopener"><i class="fa-solid fa-user"></i>Owner</a>
             </div>
         </nav>
 
